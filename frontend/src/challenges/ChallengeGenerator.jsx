@@ -17,7 +17,7 @@ const ChallengeGenerator = () => {
 
   const fetchQuota = async () => {
     try {
-      const data = await makeRequest("quota");
+      const data = await makeRequest("/api/quota");
       setQuota(data);
     } catch (error) {
       console.log(error);
@@ -29,7 +29,7 @@ const ChallengeGenerator = () => {
     setError(null);
 
     try {
-      const data = await makeRequest("generate-challenge", {
+      const data = await makeRequest("/api/generate-challenge", {
         method: "POST",
         body: JSON.stringify({ difficulty }),
       });
