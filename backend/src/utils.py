@@ -13,7 +13,7 @@ def authenticate_and_get_user_details(request):
         request_state = clerk_sdk.authenticate_request(
             request,
             AuthenticateRequestOptions(
-                authorized_parties=["http://localhost:5173", "http://localhost:5174", "https://full-secure-ai-application.vercel.app", "https://full-secureai-application.onrender.com"  ],
+                authorized_parties=["http://localhost:5173", "http://localhost:5174", "https://full-secure-ai-application.vercel.app", "https://full-secureAI-application.onrender.com"  ],
                 jwt_key=os.getenv("JWT_KEY")
             )
         )
