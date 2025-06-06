@@ -96,3 +96,5 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_frontend_key
 | GET    | `/api/my-history`         | Get user's challenge history      |
 | GET    | `/api/quota`              | Get user's quota status           |
 | POST   | `/webhooks`               | Receive events (e.g. from Clerk)  |
+
+npm run build
