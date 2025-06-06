@@ -14,15 +14,19 @@ export const useApi = () => {
 
     const method = options.method || (options.body ? "POST" : "GET");
 
-    const response = await fetch(`http://localhost:8000/api/${endpoint}`, {
-      method,
-      ...defaultOptions,
-      ...options,
-      headers: {
-        ...defaultOptions.headers,
-        ...options.headers,
-      },
-    });
+    const response = await fetch(
+      `https://full-secureai-application.onrender.com
+${endpoint}`,
+      {
+        method,
+        ...defaultOptions,
+        ...options,
+        headers: {
+          ...defaultOptions.headers,
+          ...options.headers,
+        },
+      }
+    );
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => null);
