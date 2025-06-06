@@ -15,7 +15,7 @@ export const useApi = () => {
     const method = options.method || (options.body ? "POST" : "GET");
 
     const response = await fetch(
-      `https://full-secureai-application.onrender.com
+      `https://full-secure-ai-application.onrender.com
 ${endpoint}`,
       {
         method,
