@@ -85,10 +85,13 @@ body {
   color: var(--text-color);
 }
 
-.header-content nav {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
+@media (min-width: 769px) {
+  .header-content nav {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
 }
 
 .header-content nav a {
@@ -376,7 +379,7 @@ body {
     background-color: var(--nav-bg-color);
     width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
     display: none;
     gap: 1rem;
