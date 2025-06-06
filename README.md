@@ -20,6 +20,7 @@ A full-stack application that allows authenticated users to generate AI-powered 
 ## 🧰 Tech Stack
 
 ### Frontend
+
 - React (Vite)
 - Clerk for Auth
 - React Router DOM
@@ -27,6 +28,7 @@ A full-stack application that allows authenticated users to generate AI-powered 
 - Tailwind CSS or custom CSS (assumed)
 
 ### Backend
+
 - FastAPI
 - SQLAlchemy
 - Uvicorn (ASGI server)
@@ -38,8 +40,8 @@ A full-stack application that allows authenticated users to generate AI-powered 
 ---
 
 ## 🗂 Project Structure
+
 project-root/
-│
 ├── backend/
 │ ├── src/
 │ │ ├── app.py # FastAPI entry point
@@ -67,7 +69,6 @@ project-root/
 │ └── vite.config.js
 └── README.md
 
-
 ---
 
 ## 📦 Installation
@@ -75,10 +76,18 @@ project-root/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-challenge-generator.git
-cd ai-challenge-generator
+git clone https://github.com/your-username/Full-secureAI-Application-challenge.git
+cd Full-secureAI-Application-challenge
 
 OPENAI_API_KEY=your_openai_key
 CLERK_API_KEY=your_clerk_backend_api_key
 
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_frontend_key
+```
+
+| Method | Endpoint                  | Description                       |
+| ------ | ------------------------- | --------------------------------- |
+| POST   | `/api/generate-challenge` | Generate a new AI-based challenge |
+| GET    | `/api/my-history`         | Get user's challenge history      |
+| GET    | `/api/quota`              | Get user's quota status           |
+| POST   | `/webhooks`               | Receive events (e.g. from Clerk)  |
