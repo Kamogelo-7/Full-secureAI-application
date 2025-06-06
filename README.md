@@ -41,33 +41,38 @@ A full-stack application that allows authenticated users to generate AI-powered 
 
 ## 🗂 Project Structure
 
+```
 project-root/
 ├── backend/
-├── src/
-│ ├── app.py # FastAPI entry point
-│ ├── ai_generator.py # Challenge generation via OpenAI
-│ ├── routes/
-│ │ ├── challenge.py # Challenge-related endpoints
-│ │ └── webhooks.py # Webhook handling
-│ ├── database/
-│ │ ├── db.py # DB logic (models, sessions)
-│ │ └── models.py # ORM models
-│ └── utils.py # Auth utility functions
-└── pyproject.toml # Project dependencies
-│
+│   ├── src/
+│   │   ├── app.py                 # FastAPI entry point
+│   │   ├── ai_generator.py       # Challenge generation via OpenAI
+│   │   ├── routes/
+│   │   │   ├── challenge.py      # Challenge-related endpoints
+│   │   │   └── webhooks.py       # Webhook handling
+│   │   ├── database/
+│   │   │   ├── db.py             # DB logic (models, sessions)
+│   │   │   └── models.py         # ORM models
+│   │   └── utils.py              # Auth utility functions
+│   └── pyproject.toml            # Project dependencies
+
 ├── frontend/
-├── src/
-│ ├── App.jsx # Main routing component
-│ ├── auth/
-│ │ ├── AuthenticationPage.jsx
-│ │ └── ClerkProviderWithRoutes.jsx
-│ ├── challenges/
-│ │ ├── ChallengeGenerator.jsx
-│ │ └── MCQChallenge.jsx
-│ ├── history/HistoryPanel.jsx
-│ └── layout/Layout.jsx
-└── vite.config.js
+│   ├── src/
+│   │   ├── App.jsx                         # Main routing component
+│   │   ├── auth/
+│   │   │   ├── AuthenticationPage.jsx
+│   │   │   └── ClerkProviderWithRoutes.jsx
+│   │   ├── challenges/
+│   │   │   ├── ChallengeGenerator.jsx
+│   │   │   └── MCQChallenge.jsx
+│   │   ├── history/
+│   │   │   └── HistoryPanel.jsx
+│   │   └── layout/
+│   │       └── Layout.jsx
+│   └── vite.config.js
+
 └── README.md
+```
 
 ---
 
